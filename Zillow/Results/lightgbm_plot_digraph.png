@@ -1,0 +1,820 @@
+digraph {
+	split0 [label="split_feature_name:taxvaluedollarcnt
+threshold:157843"]
+	split7 [label="split_feature_name:clusterlocation_lda_2
+threshold:0.979842245579"]
+	split9 [label="split_feature_name:yearbuilt
+threshold:68.5"]
+	split31 [label="split_feature_name:roomcnt*landtaxvaluedollarcnt
+threshold:0.271663501859"]
+	split40 [label="split_feature_name:censustractandblock
+threshold:1||2||3||4||5||6||9"]
+	split41 [label="split_feature_name:roomcnt*landtaxvaluedollarcnt
+threshold:0.217359386384"]
+	split44 [label="split_feature_name:finishedsquarefeet12
+threshold:1140.5"]
+	leaf0 [label="leaf_index:0
+leaf_value:0.0123914108538"]
+	split44 -> leaf0 [label="<="]
+	leaf45 [label="leaf_index:45
+leaf_value:0.0123326160416"]
+	split44 -> leaf45 [label=">"]
+	split41 -> split44 [label="<="]
+	split49 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*yearbuilt
+threshold:0.00146824779222"]
+	split50 [label="split_feature_name:bedroomcnt*lotsizesquarefeet
+threshold:0.00469917524606"]
+	split59 [label="split_feature_name:propertyzoningdesc
+threshold:0||1||2||3||4||5||6"]
+	leaf42 [label="leaf_index:42
+leaf_value:0.0123743112318"]
+	split59 -> leaf42 [label=is]
+	leaf60 [label="leaf_index:60
+leaf_value:0.0123270772792"]
+	split59 -> leaf60 [label="isn't"]
+	split50 -> split59 [label="<="]
+	leaf51 [label="leaf_index:51
+leaf_value:0.0123041431515"]
+	split50 -> leaf51 [label=">"]
+	split49 -> split50 [label="<="]
+	split65 [label="split_feature_name:unitcnt*longitude
+threshold:-0.0211163749918"]
+	split95 [label="split_feature_name:airconditioningtypeid
+threshold:2"]
+	leaf50 [label="leaf_index:50
+leaf_value:0.012341066507"]
+	split95 -> leaf50 [label=is]
+	leaf96 [label="leaf_index:96
+leaf_value:0.012304757238"]
+	split95 -> leaf96 [label="isn't"]
+	split65 -> split95 [label="<="]
+	split71 [label="split_feature_name:propertyzoningdesc
+threshold:0||3||4||5||6||7"]
+	leaf66 [label="leaf_index:66
+leaf_value:0.0123096291185"]
+	split71 -> leaf66 [label=is]
+	leaf72 [label="leaf_index:72
+leaf_value:0.012267853707"]
+	split71 -> leaf72 [label="isn't"]
+	split65 -> split71 [label=">"]
+	split49 -> split65 [label=">"]
+	split41 -> split49 [label=">"]
+	split40 -> split41 [label=is]
+	split46 [label="split_feature_name:lotsizesquarefeet*landtaxvaluedollarcnt
+threshold:0.0285285031423"]
+	leaf41 [label="leaf_index:41
+leaf_value:0.0122726123932"]
+	split46 -> leaf41 [label="<="]
+	split66 [label="split_feature_name:longitude*assessmentyear
+threshold:-0.0273700803518"]
+	leaf47 [label="leaf_index:47
+leaf_value:0.0123438689177"]
+	split66 -> leaf47 [label="<="]
+	split97 [label="split_feature_name:propertyzoningdesc
+threshold:2||5||7||9"]
+	leaf67 [label="leaf_index:67
+leaf_value:0.0123210389187"]
+	split97 -> leaf67 [label=is]
+	leaf98 [label="leaf_index:98
+leaf_value:0.0122812117353"]
+	split97 -> leaf98 [label="isn't"]
+	split66 -> split97 [label=">"]
+	split46 -> split66 [label=">"]
+	split40 -> split46 [label="isn't"]
+	split31 -> split40 [label="<="]
+	leaf32 [label="leaf_index:32
+leaf_value:0.0123768548283"]
+	split31 -> leaf32 [label=">"]
+	split9 -> split31 [label="<="]
+	split10 [label="split_feature_name:clusterlocation_pca_1
+threshold:2.10142147541"]
+	split11 [label="split_feature_name:finishedsquarefeet12
+threshold:1069.5"]
+	leaf10 [label="leaf_index:10
+leaf_value:0.0124260402139"]
+	split11 -> leaf10 [label="<="]
+	split39 [label="split_feature_name:landtaxvaluedollarcnt
+threshold:28048"]
+	leaf12 [label="leaf_index:12
+leaf_value:0.012387719957"]
+	split39 -> leaf12 [label="<="]
+	leaf40 [label="leaf_index:40
+leaf_value:0.0123248228678"]
+	split39 -> leaf40 [label=">"]
+	split11 -> split39 [label=">"]
+	split10 -> split11 [label="<="]
+	leaf11 [label="leaf_index:11
+leaf_value:0.0122924208626"]
+	split10 -> leaf11 [label=">"]
+	split9 -> split10 [label=">"]
+	split7 -> split9 [label="<="]
+	split43 [label="split_feature_name:taxamount
+threshold:1599.04498291"]
+	leaf8 [label="leaf_index:8
+leaf_value:0.0122948251383"]
+	split43 -> leaf8 [label="<="]
+	leaf44 [label="leaf_index:44
+leaf_value:0.0122316207271"]
+	split43 -> leaf44 [label=">"]
+	split7 -> split43 [label=">"]
+	split0 -> split7 [label="<="]
+	split1 [label="split_feature_name:finishedsquarefeet12
+threshold:2590.5"]
+	split3 [label="split_feature_name:clusterlocation_lda_0
+threshold:-2.04289937019"]
+	split5 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*yearbuilt
+threshold:0.000535340426723"]
+	leaf1 [label="leaf_index:1
+leaf_value:0.012297757355"]
+	split5 -> leaf1 [label="<="]
+	split30 [label="split_feature_name:clusterlocation_lda_2
+threshold:0.763244509697"]
+	leaf6 [label="leaf_index:6
+leaf_value:0.0122343636108"]
+	split30 -> leaf6 [label="<="]
+	leaf31 [label="leaf_index:31
+leaf_value:0.0121553276406"]
+	split30 -> leaf31 [label=">"]
+	split5 -> split30 [label=">"]
+	split3 -> split5 [label="<="]
+	split6 [label="split_feature_name:bedroomcnt*landtaxvaluedollarcnt
+threshold:-0.402243718505"]
+	split15 [label="split_feature_name:yearbuilt
+threshold:51.5"]
+	split33 [label="split_feature_name:propertyzoningdesc
+threshold:0||1||3||6||7||8"]
+	leaf4 [label="leaf_index:4
+leaf_value:0.0123226523871"]
+	split33 -> leaf4 [label=is]
+	leaf34 [label="leaf_index:34
+leaf_value:0.012248496177"]
+	split33 -> leaf34 [label="isn't"]
+	split15 -> split33 [label="<="]
+	split27 [label="split_feature_name:taxvaluedollarcnt
+threshold:631002.5"]
+	leaf16 [label="leaf_index:16
+leaf_value:0.0122757285491"]
+	split27 -> leaf16 [label="<="]
+	split56 [label="split_feature_name:censustractandblock
+threshold:0||4||5||9"]
+	leaf28 [label="leaf_index:28
+leaf_value:0.0122302251549"]
+	split56 -> leaf28 [label=is]
+	leaf57 [label="leaf_index:57
+leaf_value:0.0121741946821"]
+	split56 -> leaf57 [label="isn't"]
+	split27 -> split56 [label=">"]
+	split15 -> split27 [label=">"]
+	split6 -> split15 [label="<="]
+	split8 [label="split_feature_name:clusterlocation_lda_2
+threshold:-0.153376489878"]
+	split24 [label="split_feature_name:taxamount
+threshold:3548.6550293"]
+	split36 [label="split_feature_name:bedroomcnt*landtaxvaluedollarcnt
+threshold:-0.24150903523"]
+	leaf7 [label="leaf_index:7
+leaf_value:0.0123555871476"]
+	split36 -> leaf7 [label="<="]
+	split54 [label="split_feature_name:lotsizesquarefeet*assessmentyear
+threshold:0.00195185444318"]
+	split67 [label="split_feature_name:regionidcity
+threshold:1||6||7"]
+	split104 [label="split_feature_name:taxvaluedollarcnt
+threshold:226404"]
+	leaf37 [label="leaf_index:37
+leaf_value:0.0123399660317"]
+	split104 -> leaf37 [label="<="]
+	leaf105 [label="leaf_index:105
+leaf_value:0.0122987524262"]
+	split104 -> leaf105 [label=">"]
+	split67 -> split104 [label=is]
+	split68 [label="split_feature_name:clusterlocation_km
+threshold:2||6||7"]
+	split118 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*yearbuilt
+threshold:0.0050150915049"]
+	leaf68 [label="leaf_index:68
+leaf_value:0.0123163606801"]
+	split118 -> leaf68 [label="<="]
+	leaf119 [label="leaf_index:119
+leaf_value:0.0122874387179"]
+	split118 -> leaf119 [label=">"]
+	split68 -> split118 [label=is]
+	split69 [label="split_feature_name:longitude*yearbuilt
+threshold:-0.0572684891522"]
+	leaf69 [label="leaf_index:69
+leaf_value:0.0122368095577"]
+	split69 -> leaf69 [label="<="]
+	leaf70 [label="leaf_index:70
+leaf_value:0.0122891400177"]
+	split69 -> leaf70 [label=">"]
+	split68 -> split69 [label="isn't"]
+	split67 -> split68 [label="isn't"]
+	split54 -> split67 [label="<="]
+	split81 [label="split_feature_name:finishedfloor1squarefeet
+threshold:0||3||4||5"]
+	split83 [label="split_feature_name:latitude
+threshold:34051764"]
+	split84 [label="split_feature_name:longitude*yearbuilt
+threshold:-0.0572684891522"]
+	leaf55 [label="leaf_index:55
+leaf_value:0.0122882774495"]
+	split84 -> leaf55 [label="<="]
+	leaf85 [label="leaf_index:85
+leaf_value:0.01233290444"]
+	split84 -> leaf85 [label=">"]
+	split83 -> split84 [label="<="]
+	leaf84 [label="leaf_index:84
+leaf_value:0.0123468056022"]
+	split83 -> leaf84 [label=">"]
+	split81 -> split83 [label=is]
+	leaf82 [label="leaf_index:82
+leaf_value:0.0122878227826"]
+	split81 -> leaf82 [label="isn't"]
+	split54 -> split81 [label=">"]
+	split36 -> split54 [label=">"]
+	split24 -> split36 [label="<="]
+	split25 [label="split_feature_name:finishedsquarefeet12
+threshold:1284.5"]
+	split26 [label="split_feature_name:clusterlocation_lda_2
+threshold:-0.26691044867"]
+	split32 [label="split_feature_name:regionidcity
+threshold:3||4||7"]
+	split70 [label="split_feature_name:censustractandblock
+threshold:0||2||4"]
+	leaf25 [label="leaf_index:25
+leaf_value:0.0123194875074"]
+	split70 -> leaf25 [label=is]
+	leaf71 [label="leaf_index:71
+leaf_value:0.0122737065835"]
+	split70 -> leaf71 [label="isn't"]
+	split32 -> split70 [label=is]
+	split62 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*roomcnt
+threshold:0.00427721720189"]
+	split63 [label="split_feature_name:propertyzoningdesc
+threshold:0||4||8||9"]
+	split112 [label="split_feature_name:roomcnt*landtaxvaluedollarcnt
+threshold:-0.0275697400793"]
+	leaf33 [label="leaf_index:33
+leaf_value:0.0122399268405"]
+	split112 -> leaf33 [label="<="]
+	split123 [label="split_feature_name:lotsizesquarefeet*roomcnt
+threshold:0.0354833099991"]
+	leaf113 [label="leaf_index:113
+leaf_value:0.0122872262724"]
+	split123 -> leaf113 [label="<="]
+	leaf124 [label="leaf_index:124
+leaf_value:0.0122550414776"]
+	split123 -> leaf124 [label=">"]
+	split112 -> split123 [label=">"]
+	split63 -> split112 [label=is]
+	leaf64 [label="leaf_index:64
+leaf_value:0.0121882905656"]
+	split63 -> leaf64 [label="isn't"]
+	split62 -> split63 [label="<="]
+	split122 [label="split_feature_name:bedroomcnt*landtaxvaluedollarcnt
+threshold:-0.00485314521939"]
+	leaf63 [label="leaf_index:63
+leaf_value:0.0122586178788"]
+	split122 -> leaf63 [label="<="]
+	leaf123 [label="leaf_index:123
+leaf_value:0.0122909648906"]
+	split122 -> leaf123 [label=">"]
+	split62 -> split122 [label=">"]
+	split32 -> split62 [label="isn't"]
+	split26 -> split32 [label="<="]
+	leaf27 [label="leaf_index:27
+leaf_value:0.012336146553"]
+	split26 -> leaf27 [label=">"]
+	split25 -> split26 [label="<="]
+	split34 [label="split_feature_name:lotsizesquarefeet*landtaxvaluedollarcnt
+threshold:-0.0237839631736"]
+	split60 [label="split_feature_name:calculatedbathnbr
+threshold:2.25"]
+	split106 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*longitude
+threshold:0.000501217000419"]
+	leaf26 [label="leaf_index:26
+leaf_value:0.0122375650531"]
+	split106 -> leaf26 [label="<="]
+	leaf107 [label="leaf_index:107
+leaf_value:0.0122760658264"]
+	split106 -> leaf107 [label=">"]
+	split60 -> split106 [label="<="]
+	split82 [label="split_feature_name:landtaxvaluedollarcnt
+threshold:548741"]
+	leaf61 [label="leaf_index:61
+leaf_value:0.0122739540185"]
+	split82 -> leaf61 [label="<="]
+	leaf83 [label="leaf_index:83
+leaf_value:0.0123200560962"]
+	split82 -> leaf83 [label=">"]
+	split60 -> split82 [label=">"]
+	split34 -> split60 [label="<="]
+	split57 [label="split_feature_name:yearbuilt
+threshold:87.5"]
+	split61 [label="split_feature_name:clusterlocation_lda_2
+threshold:-0.232892036438"]
+	split78 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*longitude
+threshold:-0.0498427320272"]
+	leaf35 [label="leaf_index:35
+leaf_value:0.0123295964201"]
+	split78 -> leaf35 [label="<="]
+	split79 [label="split_feature_name:taxamount
+threshold:4127.90991211"]
+	split80 [label="split_feature_name:finishedsquarefeet12
+threshold:1525.5"]
+	leaf79 [label="leaf_index:79
+leaf_value:0.0122876862907"]
+	split80 -> leaf79 [label="<="]
+	leaf81 [label="leaf_index:81
+leaf_value:0.0123370925752"]
+	split80 -> leaf81 [label=">"]
+	split79 -> split80 [label="<="]
+	split85 [label="split_feature_name:longitude*yearbuilt
+threshold:-0.0426198728383"]
+	split90 [label="split_feature_name:unitcnt*longitude
+threshold:-0.0888479799032"]
+	leaf80 [label="leaf_index:80
+leaf_value:0.0122576233298"]
+	split90 -> leaf80 [label="<="]
+	split96 [label="split_feature_name:bedroomcnt*lotsizesquarefeet
+threshold:-0.0191384162754"]
+	leaf91 [label="leaf_index:91
+leaf_value:0.012306554813"]
+	split96 -> leaf91 [label="<="]
+	split105 [label="split_feature_name:unitcnt*longitude
+threshold:-0.0202510831878"]
+	leaf97 [label="leaf_index:97
+leaf_value:0.01230217991"]
+	split105 -> leaf97 [label="<="]
+	split129 [label="split_feature_name:longitude
+threshold:-118415560"]
+	leaf106 [label="leaf_index:106
+leaf_value:0.0122800962171"]
+	split129 -> leaf106 [label="<="]
+	leaf130 [label="leaf_index:130
+leaf_value:0.0122527274949"]
+	split129 -> leaf130 [label=">"]
+	split105 -> split129 [label=">"]
+	split96 -> split105 [label=">"]
+	split90 -> split96 [label=">"]
+	split85 -> split90 [label="<="]
+	split86 [label="split_feature_name:regionidcity
+threshold:0||1||4"]
+	split87 [label="split_feature_name:unitcnt*longitude
+threshold:0.0585868470371"]
+	split88 [label="split_feature_name:taxvaluedollarcnt
+threshold:472951.5"]
+	leaf86 [label="leaf_index:86
+leaf_value:0.0123073747817"]
+	split88 -> leaf86 [label="<="]
+	leaf89 [label="leaf_index:89
+leaf_value:0.0123537887241"]
+	split88 -> leaf89 [label=">"]
+	split87 -> split88 [label="<="]
+	split133 [label="split_feature_name:propertyzoningdesc
+threshold:0||2||3||4||7||8"]
+	leaf88 [label="leaf_index:88
+leaf_value:0.0123047504792"]
+	split133 -> leaf88 [label=is]
+	leaf134 [label="leaf_index:134
+leaf_value:0.0122839104048"]
+	split133 -> leaf134 [label="isn't"]
+	split87 -> split133 [label=">"]
+	split86 -> split87 [label=is]
+	split120 [label="split_feature_name:latitude
+threshold:34124996"]
+	leaf87 [label="leaf_index:87
+leaf_value:0.0122950163946"]
+	split120 -> leaf87 [label="<="]
+	leaf121 [label="leaf_index:121
+leaf_value:0.0122659913387"]
+	split120 -> leaf121 [label=">"]
+	split86 -> split120 [label="isn't"]
+	split85 -> split86 [label=">"]
+	split79 -> split85 [label=">"]
+	split78 -> split79 [label=">"]
+	split61 -> split78 [label="<="]
+	leaf62 [label="leaf_index:62
+leaf_value:0.0123391796574"]
+	split61 -> leaf62 [label=">"]
+	split57 -> split61 [label="<="]
+	leaf58 [label="leaf_index:58
+leaf_value:0.0123430948967"]
+	split57 -> leaf58 [label=">"]
+	split34 -> split57 [label=">"]
+	split25 -> split34 [label=">"]
+	split24 -> split25 [label=">"]
+	split8 -> split24 [label="<="]
+	split14 [label="split_feature_name:yearbuilt
+threshold:69.5"]
+	split28 [label="split_feature_name:clusterlocation_pca_1
+threshold:2.34176278114"]
+	split35 [label="split_feature_name:clusterlocation_lda_0
+threshold:0.41496348381"]
+	split47 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*yearbuilt
+threshold:-0.0463137421757"]
+	leaf9 [label="leaf_index:9
+leaf_value:0.0122330921568"]
+	split47 -> leaf9 [label="<="]
+	split48 [label="split_feature_name:taxamount
+threshold:10982.1499023"]
+	split51 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*roomcnt
+threshold:0.0302817570046"]
+	split55 [label="split_feature_name:regionidcity
+threshold:1||4||7"]
+	split74 [label="split_feature_name:bedroomcnt*landtaxvaluedollarcnt
+threshold:0.0162332588807"]
+	leaf48 [label="leaf_index:48
+leaf_value:0.0122883419427"]
+	split74 -> leaf48 [label="<="]
+	leaf75 [label="leaf_index:75
+leaf_value:0.0123358066274"]
+	split74 -> leaf75 [label=">"]
+	split55 -> split74 [label=is]
+	split98 [label="split_feature_name:unitcnt*longitude
+threshold:-0.0192810343578"]
+	split102 [label="split_feature_name:longitude
+threshold:-118031400"]
+	leaf56 [label="leaf_index:56
+leaf_value:0.0122492725813"]
+	split102 -> leaf56 [label="<="]
+	leaf103 [label="leaf_index:103
+leaf_value:0.0122874760436"]
+	split102 -> leaf103 [label=">"]
+	split98 -> split102 [label="<="]
+	split99 [label="split_feature_name:propertyzoningdesc
+threshold:1||4||6||8"]
+	leaf99 [label="leaf_index:99
+leaf_value:0.0123139279582"]
+	split99 -> leaf99 [label=is]
+	split100 [label="split_feature_name:longitude*yearbuilt
+threshold:-0.0383457038552"]
+	split101 [label="split_feature_name:taxamount
+threshold:5067.3449707"]
+	leaf100 [label="leaf_index:100
+leaf_value:0.0123136144768"]
+	split101 -> leaf100 [label="<="]
+	leaf102 [label="leaf_index:102
+leaf_value:0.0122631401372"]
+	split101 -> leaf102 [label=">"]
+	split100 -> split101 [label="<="]
+	split103 [label="split_feature_name:yearbuilt
+threshold:36.5"]
+	split130 [label="split_feature_name:clusterlocation_lda_0
+threshold:-0.0747085511684"]
+	leaf101 [label="leaf_index:101
+leaf_value:0.0122683867591"]
+	split130 -> leaf101 [label="<="]
+	leaf131 [label="leaf_index:131
+leaf_value:0.0122905702882"]
+	split130 -> leaf131 [label=">"]
+	split103 -> split130 [label="<="]
+	leaf104 [label="leaf_index:104
+leaf_value:0.0122511232936"]
+	split103 -> leaf104 [label=">"]
+	split100 -> split103 [label=">"]
+	split99 -> split100 [label="isn't"]
+	split98 -> split99 [label=">"]
+	split55 -> split98 [label="isn't"]
+	split51 -> split55 [label="<="]
+	split52 [label="split_feature_name:propertyzoningdesc
+threshold:0||1||2||3||4||5||6||7||8"]
+	split121 [label="split_feature_name:bedroomcnt*landtaxvaluedollarcnt
+threshold:0.129159152508"]
+	leaf52 [label="leaf_index:52
+leaf_value:0.0122630616758"]
+	split121 -> leaf52 [label="<="]
+	leaf122 [label="leaf_index:122
+leaf_value:0.0122971210558"]
+	split121 -> leaf122 [label=">"]
+	split52 -> split121 [label=is]
+	leaf53 [label="leaf_index:53
+leaf_value:0.012220614035"]
+	split52 -> leaf53 [label="isn't"]
+	split51 -> split52 [label=">"]
+	split48 -> split51 [label="<="]
+	leaf49 [label="leaf_index:49
+leaf_value:0.012236944437"]
+	split48 -> leaf49 [label=">"]
+	split47 -> split48 [label=">"]
+	split35 -> split47 [label="<="]
+	split37 [label="split_feature_name:finishedsquarefeet12
+threshold:1223.5"]
+	split64 [label="split_feature_name:censustractandblock
+threshold:1||3||4||8"]
+	leaf36 [label="leaf_index:36
+leaf_value:0.0123002907238"]
+	split64 -> leaf36 [label=is]
+	split75 [label="split_feature_name:yearbuilt
+threshold:48.5"]
+	split76 [label="split_feature_name:regionidcity
+threshold:0||3||4"]
+	split124 [label="split_feature_name:airconditioningtypeid
+threshold:1||2"]
+	split132 [label="split_feature_name:roomcnt*landtaxvaluedollarcnt
+threshold:0.054566770792"]
+	leaf65 [label="leaf_index:65
+leaf_value:0.0122911173414"]
+	split132 -> leaf65 [label="<="]
+	leaf133 [label="leaf_index:133
+leaf_value:0.0122692638274"]
+	split132 -> leaf133 [label=">"]
+	split124 -> split132 [label=is]
+	split134 [label="split_feature_name:unitcnt*longitude
+threshold:-0.0530661735684"]
+	leaf125 [label="leaf_index:125
+leaf_value:0.0122503232692"]
+	split134 -> leaf125 [label="<="]
+	leaf135 [label="leaf_index:135
+leaf_value:0.0122691415042"]
+	split134 -> leaf135 [label=">"]
+	split124 -> split134 [label="isn't"]
+	split76 -> split124 [label=is]
+	leaf77 [label="leaf_index:77
+leaf_value:0.01223653025"]
+	split76 -> leaf77 [label="isn't"]
+	split75 -> split76 [label="<="]
+	leaf76 [label="leaf_index:76
+leaf_value:0.0122991826331"]
+	split75 -> leaf76 [label=">"]
+	split64 -> split75 [label="isn't"]
+	split37 -> split64 [label="<="]
+	split58 [label="split_feature_name:roomcnt*landtaxvaluedollarcnt
+threshold:-0.366946518421"]
+	split91 [label="split_feature_name:yearbuilt
+threshold:40.5"]
+	leaf38 [label="leaf_index:38
+leaf_value:0.0122992345451"]
+	split91 -> leaf38 [label="<="]
+	leaf92 [label="leaf_index:92
+leaf_value:0.0123400573935"]
+	split91 -> leaf92 [label=">"]
+	split58 -> split91 [label="<="]
+	split89 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*yearbuilt
+threshold:-0.00498697650619"]
+	split94 [label="split_feature_name:fireplacecnt
+threshold:1||2"]
+	split110 [label="split_feature_name:latitude
+threshold:33647070"]
+	split128 [label="split_feature_name:finishedsquarefeet12
+threshold:1504.5"]
+	leaf59 [label="leaf_index:59
+leaf_value:0.0122837952441"]
+	split128 -> leaf59 [label="<="]
+	leaf129 [label="leaf_index:129
+leaf_value:0.0123114303493"]
+	split128 -> leaf129 [label=">"]
+	split110 -> split128 [label="<="]
+	split125 [label="split_feature_name:lotsizesquarefeet*roomcnt
+threshold:0.0344037320465"]
+	split135 [label="split_feature_name:roomcnt*landtaxvaluedollarcnt
+threshold:0.052237873897"]
+	leaf111 [label="leaf_index:111
+leaf_value:0.0122811086762"]
+	split135 -> leaf111 [label="<="]
+	leaf136 [label="leaf_index:136
+leaf_value:0.0122966681713"]
+	split135 -> leaf136 [label=">"]
+	split125 -> split135 [label="<="]
+	split126 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*longitude
+threshold:0.00658033881336"]
+	leaf126 [label="leaf_index:126
+leaf_value:0.0122516705902"]
+	split126 -> leaf126 [label="<="]
+	leaf127 [label="leaf_index:127
+leaf_value:0.0122811004378"]
+	split126 -> leaf127 [label=">"]
+	split125 -> split126 [label=">"]
+	split110 -> split125 [label=">"]
+	split94 -> split110 [label=is]
+	leaf95 [label="leaf_index:95
+leaf_value:0.0122554445766"]
+	split94 -> leaf95 [label="isn't"]
+	split89 -> split94 [label="<="]
+	split108 [label="split_feature_name:clusterlocation_lda_2
+threshold:1.0312923789"]
+	split109 [label="split_feature_name:bedroomcnt*landtaxvaluedollarcnt
+threshold:0.207572303712"]
+	split113 [label="split_feature_name:lotsizesquarefeet*roomcnt
+threshold:0.0359951425344"]
+	split115 [label="split_feature_name:latitude
+threshold:33839750"]
+	split116 [label="split_feature_name:clusterlocation_pca_0
+threshold:3.57277500629"]
+	split119 [label="split_feature_name:calculatedbathnbr
+threshold:2.25"]
+	leaf90 [label="leaf_index:90
+leaf_value:0.0123340741656"]
+	split119 -> leaf90 [label="<="]
+	leaf120 [label="leaf_index:120
+leaf_value:0.0122998477796"]
+	split119 -> leaf120 [label=">"]
+	split116 -> split119 [label="<="]
+	leaf117 [label="leaf_index:117
+leaf_value:0.0122806022743"]
+	split116 -> leaf117 [label=">"]
+	split115 -> split116 [label="<="]
+	split117 [label="split_feature_name:taxamount
+threshold:5995.16015625"]
+	split127 [label="split_feature_name:propertyzoningdesc
+threshold:3||6||7||8"]
+	leaf116 [label="leaf_index:116
+leaf_value:0.0123065790044"]
+	split127 -> leaf116 [label=is]
+	leaf128 [label="leaf_index:128
+leaf_value:0.0122800500718"]
+	split127 -> leaf128 [label="isn't"]
+	split117 -> split127 [label="<="]
+	leaf118 [label="leaf_index:118
+leaf_value:0.0122595647242"]
+	split117 -> leaf118 [label=">"]
+	split115 -> split117 [label=">"]
+	split113 -> split115 [label="<="]
+	leaf114 [label="leaf_index:114
+leaf_value:0.0123171675305"]
+	split113 -> leaf114 [label=">"]
+	split109 -> split113 [label="<="]
+	leaf110 [label="leaf_index:110
+leaf_value:0.0123181950249"]
+	split109 -> leaf110 [label=">"]
+	split108 -> split109 [label="<="]
+	split111 [label="split_feature_name:propertyzoningdesc
+threshold:1||3||5||6||8||9"]
+	leaf109 [label="leaf_index:109
+leaf_value:0.012295148157"]
+	split111 -> leaf109 [label=is]
+	leaf112 [label="leaf_index:112
+leaf_value:0.0122605913041"]
+	split111 -> leaf112 [label="isn't"]
+	split108 -> split111 [label=">"]
+	split89 -> split108 [label=">"]
+	split58 -> split89 [label=">"]
+	split37 -> split58 [label=">"]
+	split35 -> split37 [label=">"]
+	split28 -> split35 [label="<="]
+	split42 [label="split_feature_name:landtaxvaluedollarcnt*longitude
+threshold:0.0795300938189"]
+	leaf29 [label="leaf_index:29
+leaf_value:0.0122935578859"]
+	split42 -> leaf29 [label="<="]
+	leaf43 [label="leaf_index:43
+leaf_value:0.0123517792698"]
+	split42 -> leaf43 [label=">"]
+	split28 -> split42 [label=">"]
+	split14 -> split28 [label="<="]
+	split16 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*roomcnt
+threshold:0.0249787913635"]
+	split17 [label="split_feature_name:bedroomcnt*lotsizesquarefeet
+threshold:0.00461674225517"]
+	leaf15 [label="leaf_index:15
+leaf_value:0.012182462911"]
+	split17 -> leaf15 [label="<="]
+	split53 [label="split_feature_name:calculatedbathnbr
+threshold:1.75"]
+	split73 [label="split_feature_name:clusterlocation_lda_0
+threshold:-1.48436838388"]
+	leaf18 [label="leaf_index:18
+leaf_value:0.0122128988462"]
+	split73 -> leaf18 [label="<="]
+	leaf74 [label="leaf_index:74
+leaf_value:0.0122574804805"]
+	split73 -> leaf74 [label=">"]
+	split53 -> split73 [label="<="]
+	split72 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*yearbuilt
+threshold:0.00911795254797"]
+	leaf54 [label="leaf_index:54
+leaf_value:0.0122573080627"]
+	split72 -> leaf54 [label="<="]
+	leaf73 [label="leaf_index:73
+leaf_value:0.0123059938139"]
+	split72 -> leaf73 [label=">"]
+	split53 -> split72 [label=">"]
+	split17 -> split53 [label=">"]
+	split16 -> split17 [label="<="]
+	leaf17 [label="leaf_index:17
+leaf_value:0.0123105159289"]
+	split16 -> leaf17 [label=">"]
+	split14 -> split16 [label=">"]
+	split8 -> split14 [label=">"]
+	split6 -> split8 [label=">"]
+	split3 -> split6 [label=">"]
+	split1 -> split3 [label="<="]
+	split2 [label="split_feature_name:finishedsquarefeet12
+threshold:5614.5"]
+	split4 [label="split_feature_name:clusterlocation_lda_2
+threshold:-0.2239395082"]
+	split19 [label="split_feature_name:roomcnt*yearbuilt
+threshold:-0.536077201366"]
+	split93 [label="split_feature_name:latitude
+threshold:34167004"]
+	leaf2 [label="leaf_index:2
+leaf_value:0.0122894035835"]
+	split93 -> leaf2 [label="<="]
+	leaf94 [label="leaf_index:94
+leaf_value:0.0123316530517"]
+	split93 -> leaf94 [label=">"]
+	split19 -> split93 [label="<="]
+	split20 [label="split_feature_name:calculatedbathnbr
+threshold:3.75"]
+	split45 [label="split_feature_name:clusterlocation_km
+threshold:0||3||5||6"]
+	leaf20 [label="leaf_index:20
+leaf_value:0.0123668704433"]
+	split45 -> leaf20 [label=is]
+	leaf46 [label="leaf_index:46
+leaf_value:0.0123132512811"]
+	split45 -> leaf46 [label="isn't"]
+	split20 -> split45 [label="<="]
+	split21 [label="split_feature_name:yearbuilt
+threshold:25.5"]
+	leaf21 [label="leaf_index:21
+leaf_value:0.0123379459531"]
+	split21 -> leaf21 [label="<="]
+	leaf22 [label="leaf_index:22
+leaf_value:0.0124499515314"]
+	split21 -> leaf22 [label=">"]
+	split20 -> split21 [label=">"]
+	split19 -> split20 [label=">"]
+	split4 -> split19 [label="<="]
+	split12 [label="split_feature_name:censustractandblock
+threshold:0||2||4||7"]
+	split18 [label="split_feature_name:lotsizesquarefeet*landtaxvaluedollarcnt
+threshold:-0.0691497959197"]
+	split114 [label="split_feature_name:unitcnt*longitude
+threshold:0.0423327684402"]
+	leaf5 [label="leaf_index:5
+leaf_value:0.0122996687615"]
+	split114 -> leaf5 [label="<="]
+	leaf115 [label="leaf_index:115
+leaf_value:0.0122619565493"]
+	split114 -> leaf115 [label=">"]
+	split18 -> split114 [label="<="]
+	split22 [label="split_feature_name:clusterlocation_lda_2
+threshold:0.356644690037"]
+	split23 [label="split_feature_name:clusterlocation_lda_2
+threshold:0.141624122858"]
+	leaf19 [label="leaf_index:19
+leaf_value:0.0123246598988"]
+	split23 -> leaf19 [label="<="]
+	leaf24 [label="leaf_index:24
+leaf_value:0.0124272495654"]
+	split23 -> leaf24 [label=">"]
+	split22 -> split23 [label="<="]
+	split38 [label="split_feature_name:clusterlocation_pca_1
+threshold:-0.517294496298"]
+	leaf23 [label="leaf_index:23
+leaf_value:0.0123539527875"]
+	split38 -> leaf23 [label="<="]
+	split107 [label="split_feature_name:bedroomcnt*roomcnt
+threshold:-0.0782527327538"]
+	leaf39 [label="leaf_index:39
+leaf_value:0.0123118392102"]
+	split107 -> leaf39 [label="<="]
+	leaf108 [label="leaf_index:108
+leaf_value:0.0122755570583"]
+	split107 -> leaf108 [label=">"]
+	split38 -> split107 [label=">"]
+	split22 -> split38 [label=">"]
+	split18 -> split22 [label=">"]
+	split12 -> split18 [label=is]
+	split13 [label="split_feature_name:yearbuilt
+threshold:37.5"]
+	split77 [label="split_feature_name:latitude
+threshold:34163444"]
+	leaf13 [label="leaf_index:13
+leaf_value:0.012336350799"]
+	split77 -> leaf13 [label="<="]
+	split92 [label="split_feature_name:regionidcity
+threshold:0||1||2||4||6"]
+	split131 [label="split_feature_name:bedroomcnt*lotsizesquarefeet*yearbuilt
+threshold:0.0687434487045"]
+	leaf78 [label="leaf_index:78
+leaf_value:0.0123190329015"]
+	split131 -> leaf78 [label="<="]
+	leaf132 [label="leaf_index:132
+leaf_value:0.0122932577036"]
+	split131 -> leaf132 [label=">"]
+	split92 -> split131 [label=is]
+	leaf93 [label="leaf_index:93
+leaf_value:0.0122687585752"]
+	split92 -> leaf93 [label="isn't"]
+	split77 -> split92 [label=">"]
+	split13 -> split77 [label="<="]
+	split29 [label="split_feature_name:latitude
+threshold:34121796"]
+	leaf14 [label="leaf_index:14
+leaf_value:0.0122028352787"]
+	split29 -> leaf14 [label="<="]
+	leaf30 [label="leaf_index:30
+leaf_value:0.0122840662086"]
+	split29 -> leaf30 [label=">"]
+	split13 -> split29 [label=">"]
+	split12 -> split13 [label="isn't"]
+	split4 -> split12 [label=">"]
+	split2 -> split4 [label="<="]
+	leaf3 [label="leaf_index:3
+leaf_value:0.0124378225103"]
+	split2 -> leaf3 [label=">"]
+	split1 -> split2 [label=">"]
+	split0 -> split1 [label=">"]
+}
